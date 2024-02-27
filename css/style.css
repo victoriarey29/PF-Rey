@@ -1,0 +1,144 @@
+:root {
+    /* Custom propertys */
+    /* Paleta de colores */
+    --blanco: #ffffff;
+    --negro: #333333;
+    --primario: #f2dd6e;
+    --secundario: #523a34;
+    --rojo: #dc143c;
+}
+
+
+
+/* -----------------Globales----------------- */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;/* Hack para box model */
+}
+
+*,*::before,*::after {
+    box-sizing: none;/* Hack para box model */
+}
+
+body {
+    font-size: 16px;/* 1rem = 10px */
+    font-family: 'Poppins', sans-serif;  
+    color: var(--negro);
+    background-color: var(--primario);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 110rem;
+    height: 100%;
+    margin: auto;
+    gap: 1rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid {
+        gap: .5rem
+    }
+}
+
+.contenedor {
+    padding: 2rem 0;
+    width: 90%;
+    max-width: 100rem;
+    margin: 0 auto;
+   /*  overflow: hidden; */
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.botonInput {
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+    /* margin-left: 1.5rem; */
+}
+
+.contenedorFormulario {
+    margin: 4rem auto;
+}
+
+.img {
+    width: 95%;
+    max-width: 400px;
+}
+
+.tituloSecundario h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+
+/* -----------------Tipografías----------------- */
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 3.8rem;
+    font-weight: 200;
+    color: var(--rojo);
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: var(--secundario);
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-weight: 200;
+    line-height: 150%;
+}
+
+/* Footer */
+.footer {
+    height: 15rem;
+}
+
+.footer p {
+    font-size: 1.4rem;
+}
+
+.redesFooter {
+    grid-column: 1/13;
+    text-align: center;
+}
+
+.redesFooter a {
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+

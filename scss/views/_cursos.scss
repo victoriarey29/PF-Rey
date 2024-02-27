@@ -1,0 +1,62 @@
+@import '../utilities/mixins';
+@import '../components/cards';
+
+.imagen-cursos{
+    @include imagen-cursos('../img/pastas');
+}
+
+
+/*REQUISITOS CURSOS*/
+
+.container-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 2000px;
+  padding-right: 120px;
+  padding-top: 70px;
+  border-radius: 10px;
+  background: url(../img/iconos_cursos.png) center/cover no-repeat;
+  background-size: cover;
+}
+  
+    .columna-cursos {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      margin-bottom: 20px; 
+      height: 200px; 
+  
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #523A34;
+      }
+  
+      p {
+        font-size: 1em;
+        line-height: 1.4;
+        text-align: center;
+      }
+    }
+  
+    @media (min-width: 600px) {
+      .columna-cursos {
+        width: 48%;
+      }
+    }
+  
+    @media (min-width: 768px) {
+      .columna-cursos {
+        width: 48%;
+      }
+    }
+  
+    @media (min-width: 992px) {
+      .columna-cursos {
+        width: 23%;
+      }
+    }

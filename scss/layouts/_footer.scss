@@ -1,0 +1,105 @@
+@import '../base/colors';
+@import '../utilities/mixins';
+
+
+.footer {
+  background-color: #24262b;
+  color: #fff;
+  padding: 50px 0;
+  border-top-color: #ffd264;
+    border-top-width: 5px; 
+    border-style: solid;
+
+  .container-footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .row-footer {
+          display: flex;
+
+          .footer-col {
+              width: 100%;
+              padding: 0 30px;
+
+              h4 {
+                  font-size: 18px;
+                  color: #ffffff;
+                  margin-bottom: 15px;
+                  font-weight: 500;
+                  position: relative;
+
+                  &::before {
+                      content: '';
+                      position: absolute;
+                      left: 0;
+                      bottom: -5px;
+                      background-color: #ffd264;
+                      height: 2px;
+                      box-sizing: border-box;
+                      width: 50px;
+                  }
+              }
+
+              ul {
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+
+                  li {
+                      margin-bottom: 10px;
+
+                      a {
+                          font-size: 16px;
+                          text-transform: capitalize;
+                          color: #ffffff;
+                          text-decoration: none;
+                          font-weight: 300;
+                          color: #bbbbbb;
+                          display: block;
+                          transition: all 0.3s ease;
+
+                          &:hover {
+                              color: #ffd264;
+                          }
+                      }
+                  }
+              }
+
+              .social-links {
+                  a {
+                      display: inline-block;
+                      height: 40px;
+                      width: 40px;
+                      background-color: rgba(255, 255, 255, 0.2);
+                      margin: 0 10px 10px 0;
+                      text-align: center;
+                      line-height: 40px;
+                      border-radius: 50%;
+                      color: #ffffff;
+                      transition: all 0.5s ease;
+
+                      &:hover {
+                          color: #24262b;
+                          background-color: #ffffff;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  @media (max-width: 767px) {
+      .footer-col {
+          width: 50%;
+          margin-bottom: 30px;
+      }
+  }
+
+  @media (max-width: 574px) {
+      .footer-col {
+          width: 100%;
+      }
+  }
+}

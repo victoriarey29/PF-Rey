@@ -1,0 +1,151 @@
+@import '../base/colors';
+@import '../base/colors';
+@import '../grid/mixins';
+
+.imagen-nosotros{
+    @include imagen-nosotros('../img/composicion-flat-lay-pasta-copyspace.jpeg');
+} 
+
+
+.bg-products {
+    background: $color-light2;
+
+}
+
+.galeria {
+    margin: 5rem auto;
+    padding: auto 1rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 5rem;
+        color: $color-light;
+        font-size: 5rem;
+    }
+    &__h3 {
+        text-align: center;
+        margin-bottom: 5rem;
+        color: $color-light;
+        font-size: 4rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-gap: 1em;
+        margin: auto 1rem;
+    }
+    &__gridnosotros {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+        grid-gap: 1em;
+        margin-bottom: 30px;
+    }
+}
+
+.merienda{
+    position: relative;
+
+    &__titulo {
+        color: whitesmoke;
+        font-size: 1em;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background: rgba(82, 58, 52, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover, :focus {
+            opacity: 1;
+            
+        }
+    }
+
+    &__img {
+        line-height: 0;
+        overflow: hidden;
+
+        img {
+            filter: blur(0px);
+            transition: filter 0.3s ease-in;
+            transform: scale(1.1);
+
+            &:hover, :focus {
+                filter: blur(4px);
+            }
+        }   
+    }
+}
+
+@media (hover: none) { 
+    .galeria__titulo {
+        opacity: 1;
+    }
+
+    .galeria__img img {
+        filter: blur(2px);
+    }
+}
+
+.titulo-principal {
+    h2 {
+        text-align: center;
+        margin: 5rem;
+        color: $color-dark;
+        font-size: 5rem;
+    } 
+}
+
+
+.parte-principal-nosotros{
+    height: 80rem;
+    background: $color-primary;
+
+    @include sm{
+        height: 84rem;
+    }
+
+    @include lg {
+        height: 56rem;
+    }
+    
+    &__content-img {
+        @include centrarContenido;
+        margin: 5rem 2rem;
+        img {
+            @include rotarImg(-10deg);
+        }
+    }
+
+    &__content-texts {
+        text-align: center;
+
+        p {
+            width: 100%;
+            margin: 2rem auto;
+            line-height: 150%;
+        }
+
+        @include lg {
+            text-align: left;
+            
+            h2 {
+                margin:11rem 1rem 1rem 0rem;
+            }
+
+            p {
+                margin: 1rem 0rem 0rem 0rem;
+                text-align: center;
+            }
+        }
+    } 
+}

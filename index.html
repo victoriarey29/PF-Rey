@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Coffe Monster</title>
+      <link rel="stylesheet" href="css/main.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link rel="icon" type="image/png" href="./img/logo_pagina.png" sizes="16x16"> <link rel="icon" type="image/png" href="./img/logo_pagina.png" sizes="32x32">
+   </head>
+   <body class="bg-products">
+      <nav class="navbar">
+         <div class="content">
+            <a href="index.html"><img src="img/logo_pagina.png" alt="Logo" height="100">
+            </a>
+            <ul class="menu-list">
+               <div class="icon cancel-btn">
+                  <i class="fas fa-times"></i>
+               </div>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="pages/meriendas.html"> Meriendas</a></li>
+               <li><a href="pages/cursos.html">Cursos</a></li>
+               <li><a href="pages/nosotros.html">Nosotros</a></li>
+               <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+            <div class="icon menu-btn">
+               <i class="fas fa-bars"></i>
+            </div>
+         </div>
+      </nav>
+      <div class="imagen-principal">
+         <div class="text-overlay">
+            <h2>Bienvenidos</h2>
+            <p>Una experiencia deliciosa comienza aquí.</p>
+         </div>
+      </div>
+      <div class="pasteleria">
+        <!-- Seccion 1 -->
+         <div class="column">
+            <h1><strong style="color:rgb(183, 145, 123);">NUESTRO</strong> <strong>COMIENZO</strong></h1>
+            <p>El nombre Monster Coffe fue usado por primera vez relacionado con la excelencia culinaria en el siglo XVI, cuando el rey Enrique III creó la Orden del Espíritu Santo, una de las órdenes más importantes en Francia. El símbolo de esta orden era la cruz del Espíritu Santo, que colgaba de un lazo azul. Debido a la prestigiosa naturaleza de esta Orden y de las celebraciones que acompañaban a sus ceremonias, el nombre del Cordon Bleu pasó a ser muy reconocido y famoso.</p>
+         </div>
+         <div class="column">
+            <p>Monster Coffe como Escuela de artes culinarias fue fundada en Argentina en 1895 por nuestro pastetelero Carlos Alfonso. El 14 de Enero de 1896 en un horno eléctrico tiene lugar la primera clase de demostración de la historia, en un esfuerzo de promocionar la revista, y del lanzamiento de la Escuela. Desde este momento, la reputación internacional de Le Cordon Bleu se difundió rápidamente. Grandes chefs se convertían en profesores de la Escuela, lo que contribuyó, aun más al reconocimiento internacional de la misma. Como resultado de ello, estudiantes provenientes de todo el mundo, se matriculaban en la Escuela y entre ellos personajes muy conocidos como Julia Child en 1950.</p>
+            </p>
+         </div>
+      </div>
+
+       <section class="parte-principal">
+         <div class="container">
+            <!-- Seccion 2 -->
+            <div class="parte-principal__content row">
+               <div class="parte-principal__content-img col-xs-12 col-lg-6">
+                  <img class="img" src="img/premio-pasteleria.jpeg" alt="Imagen premio pasteleria">  
+               </div>
+               <div class="parte-principal__content-texts col-xs-12 col-lg-5">
+                  <div class="columna-derecha">
+                     <div class="contenido">
+                        <h2 class="titulo-encabezados"><strong style="color:rgb(183, 145, 123);">NUESTRA</strong>
+                           <strong>INTRODUCCIÓN</strong></h2>
+                       <div class="botones">
+                         <button class="button__primary" onclick="cambiarTexto('texto1')" id="boton1">Nuestro objetivo</button>
+                         <button class="button__secondary" onclick="cambiarTexto('texto2')" id="boton2">Nuestro modelo</button>
+                       </div>
+                       <p id="texto">Texto inicial</p>
+                     </div>
+                   </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div class="containers">
+         <!-- Seccion 3 -->
+         <div class="columns text">
+            <h2>Duración</h2>
+            <p>10 meses - 3 horas por semana.</p>
+            <h2>Horarios</h2>
+            <p>Consultá por las distintas alternativas que te ofrecemos en cada sede.</p>
+            <h2>Requisitos</h2>
+            <p>Documento de Identidad (fotocopia), Certificado de estudios primarios (fotocopia), 2 fotos 4 x 4, Examen psicofísico.</p>
+            <button class="button__primary">
+            <a class="" href="pages/cursos.html" role="button">Ver más</a>
+            </button>
+         </div>
+
+         <div class="columns photos-">
+            <!-- Seccion 4 -->
+            <div class="photo-">
+               <img src="img/chef_11.jpg" alt="Imagen de comida - curso de Gastronomía – Marzo 2024">
+            </div>
+            <div class="photo-">
+               <img src="img/chef_12.jpg" alt="Imagen torta - curso de Pastelería – Marzo 2024">
+            </div>
+            <div class="photo-">
+               <img src="img/chef_9.jpeg" alt="Imagen de comida - curso de Cocina Plant Based- Marzo 2024">
+            </div>
+            <div class="photo-">
+               <img src="img/chef_10.jpeg" alt="Imagen torta - curso de Pastelería – Marzo 2024">
+            </div>
+         </div>
+      </div>
+
+      <section class="container galeria">
+         <!-- Seccion 5 -->
+         <div class="container-sponsor">
+            <h2 class="title-lgBold"><strong style="color:rgb(183, 145, 123);">NUESTROS</strong>
+               <strong>SPONSORS</strong>
+            </h2>
+            <div class="gallery-container">
+               <div class="gallery" id="gallery"></div>
+            </div>
+         </div>
+         <div class="modal" id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <!-- Seccion 6 -->
+         <div class="container-footer">
+            <div class="row-footer">
+               <div class="footer-col">
+                  <h4>Mapa de sitio</h4>
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="pages/meriendas.html">Meriendas</a></li>
+                     <li><a href="pages/cursos.html">Cursos</a></li>
+                     <li><a href="pages/nosotros.html">Nosotros</a></li>
+                     <li><a href="pages/contacto.html">Contacto</a></li>
+                  </ul>
+               </div>
+               <div class="footer-col">
+                  <h4>Nuestras redes</h4>
+                  <div class="social-links">
+                     <a href="https://www.facebook.com/profile.php?id=61556314516317&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+               </div>
+               <div class="footer-col">
+                  <h4>Volver arriba</h4>
+                  <a href="#top"><i class="fas fa-arrow-up"></i></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="js/app.js"></script>
+   </body>
+</html>
